@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Quiz Application</title>
+     <link rel="stylesheet" href="quiz.css">
+     <link rel="stylesheet" href="bootstrap.css">
+     
+</head>
+<body>
+     <div class="main" id="r">
+          <div class="card">
+               <div class="card-body">
+                   
+                         <h2 class="timer">
+                              Time Left : <span id="min"></span> :
+                              <span id="sec"></span>
+                         </h2>
+
+                         <h2 class="questionCounter">
+                              Question Number <span id="q"></span> of 11
+                         </h2>
+                   
+                    <h1 class="card-title" id="question"></h1>
+
+
+                    <label onclick="enableBtn()" class="Option">
+                          <input type="radio" name="option" value="1" class="form-check-input"> <span id="op1"></span>
+                    </label>
+
+                    <br / >
+
+                    <label onclick="enableBtn()" class="Option">
+                        <input type="radio" name="option" value="2" class="form-check-input"> <span id="op2" ></span>
+                    </label>
+
+                    <br / >
+
+                    <label onclick="enableBtn()" class="Option">
+                        <input type="radio" name="option" value="3" class="form-check-input"> <span id="op3" ></span>
+                    </label>
+
+                    <br / >
+
+                    <label onclick="enableBtn()" class="Option">
+                         <input type="radio" name="option" value="4" class="form-check-input"> <span id="op4" ></span> 
+                    </label>
+
+                    <br / >
+
+                    <button class="btn btn-outline-danger" id="btn" onclick="nextQues()" disabled>Next</button>
+
+                    
+               </div>
+     </div>
+
+
+
+
+
+
+
+     <script src="app.js"></script>
+</body>
+</html>
